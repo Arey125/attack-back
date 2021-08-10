@@ -50,8 +50,6 @@ class State:
         self.num += 1
         num = self.num
         print(num, self.at)
-        with open('123.txt', 'a', encoding='utf-8') as file:
-            file.write(pkt.show(True))
         try:
             if IPv6 in pkt:
                 lens.append(pkt[IPv6].plen)
